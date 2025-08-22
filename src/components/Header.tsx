@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { SparklesIcon } from './icons';
+import { SparklesIcon } from './icons.tsx';
 
 export const Header: React.FC = () => (
   <header className="text-center">

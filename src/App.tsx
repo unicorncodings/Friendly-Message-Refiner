@@ -1,15 +1,15 @@
 
 import React, { useState, useCallback } from 'react';
-import { refineMessage } from './services/geminiService';
-import { Tone } from './types';
-import { TONES } from './constants';
-import { Header } from './components/Header';
-import { ToneSelector } from './components/ToneSelector';
-import { MessageInput } from './components/MessageInput';
-import { MessageOutput } from './components/MessageOutput';
-import { Loader } from './components/Loader';
-import { ErrorDisplay } from './components/ErrorDisplay';
-import { RefineButton } from './components/RefineButton';
+import { refineMessage } from './services/geminiService.ts';
+import { Tone } from './types.ts';
+import { TONES } from './constants.ts';
+import { Header } from './components/Header.tsx';
+import { ToneSelector } from './components/ToneSelector.tsx';
+import { MessageInput } from './components/MessageInput.tsx';
+import { MessageOutput } from './components/MessageOutput.tsx';
+import { Loader } from './components/Loader.tsx';
+import { ErrorDisplay } from './components/ErrorDisplay.tsx';
+import { RefineButton } from './components/RefineButton.tsx';
 
 const App: React.FC = () => {
   const [inputText, setInputText] = useState<string>('');

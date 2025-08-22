@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Tone } from '../types';
+import { Tone } from '../types.ts';
 
 interface ToneSelectorProps {
   tones: Tone[];
